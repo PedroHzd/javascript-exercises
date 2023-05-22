@@ -1,26 +1,24 @@
-const add = function() {
-	
+const add = (a, b) => a + b;
+
+const subtract = (a, b) => a - b;
+
+const sum = (array) => {
+  if (array === []) {
+    return 0;
+  } else if (array.length === 1) {
+    return array[0];
+  }
+// the if statement is not necessary
+  return array.reduce((sum, number) => sum + number, 0);
 };
 
-const subtract = function() {
-	
-};
+const multiply = (array) => array.reduce((total, number) => total * number, 1);
 
-const sum = function() {
-	
-};
+const power = (a, b) => a ** b;
 
-const multiply = function() {
-
-};
-
-const power = function() {
-	
-};
-
-const factorial = function() {
-	
-};
+const factorial = (number) => {
+  return number <= 1 ? 1 : number * factorial(number - 1);
+} ;
 
 // Do not edit below this line
 module.exports = {

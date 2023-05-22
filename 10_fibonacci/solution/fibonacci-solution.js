@@ -11,4 +11,6 @@ const fibonacci = function (count) {
   return b;
 };
 
-module.exports = fibonacci;
+console.log(fibonacci(2));
+
+// module.exports = fibonacci;
